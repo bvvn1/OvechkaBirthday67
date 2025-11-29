@@ -123,6 +123,20 @@
         height: 100%;
         z-index: 1;
       }
+
+        @keyframes spin3d-madness {
+          from {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          }
+          to {
+            transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+          }
+        }
+
+        .spin-madness {
+          animation: spin3d-madness linear infinite;
+          /* We'll control speed via inline style with JS */
+        }
     </style>
   </head>
 
@@ -143,12 +157,58 @@
           <button class="btn" id="start-btn">Aight next</button>
         </div>
 
-        <div class="step" id="step2">
+        <div class="step " id="step2">
           <div class="emoji">👀</div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">Epichniqt uvod</h2>
-          <p class="text-lg text-gray-700 mb-6">
-            Vqrvam che i bez men znaesh kolko si gotina, specialna and shi, no
-            vse pak mi pozvoli nqkolko mili dumi.
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">GSM</h2>
+          <p class="text-lg text-gray-700 mb-6 ">
+            За София съм тръгнал сам,
+            връзка с тебе нямам там.
+            За София съм тръгнал сам,
+            връзка с тебе нямам там.
+            Ще си купя телефон,
+            винаги ще съм във тон.
+            Ще си купя телефон,
+            винаги ще съм във тон.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
+            Нямам никакъв проблем,
+            вече имам GSM.
+            Нямам никакъв проблем,
+            вече имам GSM.
+            Ще те чувам всеки ден
+            и да си далеч от мен.
+            Ще те чувам всеки ден
+            и да си далеч от мен.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
+            GSM си ти купи,
+            времето ще ти спести.
+            GSM си ти купи,
+            времето ще ти спести.
+            Sony, Siemens, Ericsson,
+            за да имаш ти фасон.
+            Sony, Siemens, Ericsson,
+            за да имаш ти фасон.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
+            GSM, GSM, GSM, GSM,
+            ще си купя GSM,
+            с теб да се чувам всеки час,
+            туй желая аз.
           </p>
           <button class="btn" id="next-btn-2">Oke are</button>
         </div>
@@ -157,6 +217,7 @@
           <h2 class="text-3xl md:text-4xl font-bold mb-8">
             Nqkolkoto mili dumi
           </h2>
+          <img class="rounded-xl m-auto mb-6 animate-spin spin-madness rotate-x-60 -rotate-y-60" id="madImage" src="milko.png" alt="milko">
           <p class="text-lg text-gray-700">
             Usmivkata ti izpulva surceto mi s tolkova radost i toplina. Puk
             smehut ti moje bi go haresvam poveche ot vsqka pesen, koqto nqkoga
@@ -171,18 +232,16 @@
 
         <div class="step" id="step4">
           <img
-            class="rounded-xl m-auto mb-6"
-            src="funny_ovechka.jpg"
-            height="200"
-            width="200"
-            alt="Funny ovechka 😛"
+            class="rounded-xl m-auto mb-6 animate-bounce"
+            src="image.png"
+            height="1000"
+            width="1500"
+            alt="Obicham Burgas!!!!!!!"
             srcset=""
           />
 
           <p class="text-lg text-gray-700 mb-6">
-            Za malkoto vreme koeto se poznavame ti mi podari nerealno
-            kolichestvo nezabravimi i radostni spomeni i emocii. Nqma dumi s
-            koito da opisha kolko shtastliv chovek stanah. 🥹
+            thank you thank you thank you thank you thank you thank youthank you thank you thank youthank you thank you thank youthank you thank you thank you
           </p>
           <button class="btn" id="next-btn-4">I za posledno</button>
         </div>
@@ -190,7 +249,7 @@
         <div class="step" id="step5">
           <div class="emoji">🎂</div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6 mt-2">
-            Moeto pojelanie za teb
+            67
           </h2>
           <p class="text-lg text-gray-700 mb-8">
             Dano uspeesh da postignesh vsqka cel, koqto si postavish, bez
@@ -200,18 +259,29 @@
             okolo teb.
           </p>
           <p class="text-xl font-semibold text-red-900 mb-8">
-            Chestit rozhden den, <span class="text-pink-600">Cveti</span>! ❤️‍🔥
+            Chestit rozhden den, <a href="https://www.youtube.com/watch?v=wcZDsBy5Zzg&list=RDwcZDsBy5Zzg"><span class="text-blue-600 underline">na mitko trompeta</span></a>! ❤️‍🔥
           </p>
-          <button class="btn" id="confetti-btn">Davaaj natisni me</button>
-          <p class="mt-8 text-gray-500">Made with love just for you</p>
+          <button class="btn" id="confetti-btn">Davaaj 67 me</button>
+          <p class="mt-8 text-gray-500">Made with 67 just for you</p>
         </div>
       </div>
     </div>
+
+    <audio id="myAudio" src="bateznaesh.mp3" preload="auto" class="hidden"></audio>
 
     <script>
       // Step Navigation
       let currentStep = 1;
       const totalSteps = 5;
+
+      const img = document.getElementById('madImage');
+        let duration = 4; // starting duration in seconds
+
+        setInterval(() => {
+          duration *= 0.92; // reduce duration → speeds up exponentially
+          if (duration < 0.01) duration = 0.01; // don't crash the browser :)
+          img.style.animationDuration = duration + 's';
+        }, 200); 
 
       function updateProgressBar() {
         const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
@@ -234,6 +304,9 @@
       // Button event listeners
       document.getElementById("start-btn").addEventListener("click", () => {
         currentStep = 2;
+        const audio = document.getElementById('myAudio');
+        audio.play();
+
         showStep(currentStep);
       });
 
@@ -258,8 +331,8 @@
 
         // Standard confetti
         confetti({
-          particleCount: 150,
-          spread: 70,
+          particleCount: 6767,
+          spread: 670,
           origin: { y: 0.6 },
           colors: ["#ff0000", "#ff69b4", "#ff1493", "#ffc0cb"],
         });
@@ -267,8 +340,8 @@
         // Heart-shaped confetti
         setTimeout(() => {
           confetti({
-            particleCount: 30,
-            spread: 60,
+            particleCount: 6767,
+            spread: 670,
             origin: { y: 0.5 },
             shapes: ["heart"],
             colors: ["#ff0000", "#ff69b4"],
@@ -278,18 +351,18 @@
         // More hearts from different directions
         setTimeout(() => {
           confetti({
-            particleCount: 20,
-            angle: 60,
-            spread: 55,
+            particleCount: 6767,
+            angle: 67,
+            spread: 67,
             origin: { x: 0 },
             shapes: ["heart"],
             colors: ["#ff0000", "#ff69b4"],
           });
 
           confetti({
-            particleCount: 20,
-            angle: 120,
-            spread: 55,
+            particleCount: 6767,
+            angle: 670,
+            spread: 67,
             origin: { x: 1 },
             shapes: ["heart"],
             colors: ["#ff0000", "#ff69b4"],
